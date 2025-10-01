@@ -68,14 +68,14 @@ const [size, setSize] = useState(buttonSize);
   return (
     <>
       <div className='text' style={{display: final? 'block' : 'none'}}>{text}</div>
-      <video ref={videoRef} src={video} width="90%" style={{display: !final? 'block' : 'none'}}></video>
+      <video ref={videoRef} src={video} width="95%" style={{display: !final? 'block' : 'none', borderRadius: '30px'}}></video>
       <button className='yes' onClick={eventYes} style={{display: show ? 'inline' : 'none'}}>
         YES
       </button>
       <button className='no' onClick={eventNo} style={{width: `${size+15}px`, height: `${size}px`, display: show ? 'inline' : 'none'}}>
         NO
       </button>
-      <button className='heart' style={{display: !show ? 'inline' : 'none'}} onClick={eventMi}> тицьні сюди бубласька</button>
+      <button className='heart' style={{display: !show ? 'inline' : 'none', marginTop: '20px'}} onClick={eventMi}> тицьні сюди бубласька</button>
     </>
   )
 }
